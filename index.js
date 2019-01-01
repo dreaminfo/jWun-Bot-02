@@ -181,8 +181,8 @@ function handleSticker(message, replyToken) {
   return replyText(replyToken, 'Got Sticker');
 }
 
-const port = config.port;
-// const port = process.env.PORT || 4000
+// const port = config.port;
+const port = process.env.PORT || 4000
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
